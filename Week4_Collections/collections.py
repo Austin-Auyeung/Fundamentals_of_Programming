@@ -5,7 +5,6 @@
 list1 = [10, "test", False, 23.24]
 print(list1)
 
-
 ### Length of the list
 print(len(list1))
 ### Allows indexing and slicing
@@ -81,3 +80,68 @@ print(courses.union(courses1))
 print(courses.intersection(courses1))
 print(courses.difference(courses1))
 print(courses1.difference(courses))
+
+
+################### Dictionaries - collection of key value pairs ###################
+employee = {
+    "id": 1234,
+    "name": "John",
+    "skills": ["Java", "PHP", "Python"],
+    "address": {
+        "city": "LA",
+        "state": "CA",
+        "zip-code": 12344
+    }
+}
+print(employee["address"]["state"])
+
+
+employee_dict = [
+    {
+        "id": 1234,
+        "name": "John",
+        "skills": ["Java", "PHP", "Python"],
+        "address": {
+            "city": "LA",
+            "state": "CA",
+            "zip-code": 12344
+        }
+    },
+    {
+        "id": 1234,
+        "name": "John",
+        "skills": ["Java", "SQL", "Python"],
+        "address": {
+            "city": "LA",
+            "state": "CA",
+            "zip-code": 12344
+        }
+    }
+]
+
+print(employee_dict[1]["skills"][1])
+
+########## Creating Empty Collections ############
+# list1 = []
+# tuple1 = ()
+# set1 = {}
+# print(type(set1))
+# dict1 = {}
+# set1 = set()
+# tuple1 = (10,)
+# print(type(tuple1))
+
+
+### Accessing Elements from Collections ###
+list1 = [32, 34, 5, [45, 364, 23], [43, 7, 23, [34, 657, 11]], 11]
+print(list1[4][3][1])
+## Tuples also support indexing and slicing
+
+# set1 = {314, 219, 134}
+# print(set1[1])
+# set[1] will error out because set is unordered and hence no indices are assigned to the elements
+
+## Convert a list or a tuple to a set
+list2 = [21, 4, 10, 13, 78, 4, 21]
+set2 = set(list2) # also pass a tuple
+print(set2)

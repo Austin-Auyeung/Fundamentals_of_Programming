@@ -6,7 +6,7 @@ middleIndex = int(len(userStr)/2) # The middle letter is found by getting the mi
 middleLetter = userStr[middleIndex]
 lastLetter = userStr[-1] # The last letter is found by using the index of -1 (first letter starting at the end)
 
-newStr = firstLetter + middleLetter + lastLetter
+newStr = firstLetter + middleLetter + lastLetter # Add all letters together
 
 print(newStr)
 
@@ -27,7 +27,7 @@ print(str2)
 
 midIndex1 = int(len(str1)/2) # Finding the middle of the string by dividing by 2
 print(midIndex1)
-firstHalf = str1[0:midIndex1] # Storing the first half of the first string in a variable to then add the second string after
+firstHalf = str1[:midIndex1] # Storing the first half of the first string in a variable to then add the second string after
 firstMiddle = firstHalf + str2 # Adding the second string after the first half and storing it in a variable
 newStr1 = firstMiddle + str1[midIndex1:] # Combining all parts together, using the the middle index to the end of the first string to get the ending of the first string
 print(newStr1)
