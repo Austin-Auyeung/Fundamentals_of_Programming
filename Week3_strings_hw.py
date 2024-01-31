@@ -25,25 +25,25 @@ print(str1)
 str2 = input("Enter your second string: ")
 print(str2)
 
-midIndex1 = int(len(str1)/2)
+midIndex1 = int(len(str1)/2) # Finding the middle of the string by dividing by 2
 print(midIndex1)
-firstHalf = str1[0:midIndex1]
-firstMiddle = firstHalf + str2
-newStr1 = firstMiddle + str1[midIndex1:]
+firstHalf = str1[0:midIndex1] # Storing the first half of the first string in a variable to then add the second string after
+firstMiddle = firstHalf + str2 # Adding the second string after the first half and storing it in a variable
+newStr1 = firstMiddle + str1[midIndex1:] # Combining all parts together, using the the middle index to the end of the first string to get the ending of the first string
 print(newStr1)
 
 
 # Question 4 : Take a string from the user and reverse it
 userInput = input("Enter a string: ")
 print(userInput)
-reverse = userInput[-1::-1]
+reverse = userInput[-1::-1] # Starting from the end one step at a time going the other way(reverse)
 print(reverse)
 
 
 # Question 5 : Extract the amount from the below string.
 # “The total value of the 10 products purchased along with the tax is $150”
 str = "The total value of the 10 products purchased along with the tax is $150"
-amount = str[-3:]
+amount = str[-3:] # Start from the end and 3 characters in. From there to the rest of the string
 print(amount)
 
 # Question 6 : Try to change the 4th character of a given string. Were you able to do it?
@@ -53,7 +53,7 @@ print(str)
 # The string object does not support item assignment. Changing characters in a string is not possible
 
 #############################################################################################################################
-
+######### 2 ###########
 name = input("Enter your name: ")
 last = input("Enter your last name: ")
 age = input("Enter your age: ")
@@ -61,4 +61,17 @@ ssn = input("Enter your ssn: ")
 height = input("Enter your height: ")
 weight = input("Enter your weight: ")
 
-print(f"Hello {name} {last}! Thank you for applying. Please find your details below.\nAge: {age}\nSSN: {ssn}\nHeight: {int(height) * 0.3937} inches\nWeight: {int(weight) * 0.453}")
+print(f"Hello {name} {last}! Thank you for applying. Please find your details below.\nAge: {age}\nSSN: {ssn}\nHeight: {int(int(height) / 2.54)} inches\nWeight: {int(int(weight) / 2.2)} kgs")
+
+
+########## 3 #########
+quote = "You have brains in your head. You have feet in your shoes. You can steer yourself any direction you choose. -Dr. Seuss"
+
+phraseStart = quote.find("steer")
+phraseEnd = quote.find("choose")
+phraseEnd = phraseEnd + 5
+phrase = quote[phraseStart:phraseEnd + 1]
+print(phrase)
+print("feet" in phrase)
+newQuote = quote.replace("Dr. Seuss", "Dr. Seuss, Oh, the Places You’ll Go!")
+print(newQuote)
