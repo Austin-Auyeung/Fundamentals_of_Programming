@@ -143,4 +143,4 @@ dict1 = {
     }
 }
 
-print(dict1["course"]["student"]["marks"]["history"])
+print(dict1["course"]["student"]["marks"]["history"]) # Finding the value by using the keys
