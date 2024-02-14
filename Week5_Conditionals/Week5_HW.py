@@ -84,3 +84,24 @@ else:
 
 print(leapYear)
 
+
+######## Question 4: Write a program that simulates the logic shown in the below flowchart
+print("Welcome to Treasure Island.\nYour mission is to find the treasure.")
+choice = input("Left or Right? ").upper()
+
+if choice == "LEFT":
+    choice = input("Swim or Wait? ").upper()
+    if choice == "WAIT":
+        choice = input("Which door? Red, Blue, or Yellow: ").upper()
+        if choice == "RED":
+            print("You were burned by fire.\nGame Over!")
+        elif choice == "BLUE":
+            print("You were eaten by beasts.\nGame Over!")
+        elif choice == "YELLOW":
+            print("You Win!")
+        else:
+            print("Game Over!")
+    else:
+        print("You were attacked by a trout\nGame Over!")
+else:
+    print("You fell into a hole.\nGame Over!")
