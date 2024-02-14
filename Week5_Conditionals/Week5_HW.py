@@ -15,7 +15,7 @@ dict1 = {
     8: "eight",
     9: "nine"
 }
-
+# printing the string that corresponds to the id based on users number
 num = int(input("Enter a digit between 0 and 9: "))
 
 print(dict1[num])
@@ -28,7 +28,7 @@ num = int(input("Enter a digit between 0 and 9: "))
 print(list1[num])
 '''
 
-
+print()
 ######### Question 2: Rock, Paper, Scissors
 import random
 
@@ -38,7 +38,7 @@ import random
 userMove = input("Pick your move - rock/paper/scissors: ")
 rand_num = round(random.random(), 2)
 compMove = ""
-
+# using a randomizer to pick for the computer
 if rand_num >= 0 and rand_num < 1/3:
     compMove = "rock"
 elif rand_num >= 1/3 and rand_num < 2/3:
@@ -47,7 +47,7 @@ else:
     compMove = "scissors"
 
 result = ""
-if userMove == compMove:
+if userMove == compMove:  # deciding who wins based on the computers pick and user pick
     result = "Tie."
 elif userMove == "rock":
     if compMove == "paper":
@@ -67,7 +67,7 @@ elif userMove == "paper":
 
 print(f"You picked {userMove}. Computer picked {compMove}. {result}")
 
-
+print()
 ######### Question 3: Write a program that takes year as input and checks whether the given year is leap or not.
 year = int(input("Enter a year: "))
 leapYear = ""
@@ -84,11 +84,11 @@ else:
 
 print(leapYear)
 
-
+print()
 ######## Question 4: Write a program that simulates the logic shown in the below flowchart
 print("Welcome to Treasure Island.\nYour mission is to find the treasure.")
 choice = input("Left or Right? ").upper()
-
+# falls into each if based on the users choices
 if choice == "LEFT":
     choice = input("Swim or Wait? ").upper()
     if choice == "WAIT":
