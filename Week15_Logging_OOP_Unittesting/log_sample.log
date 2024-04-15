@@ -1,0 +1,6 @@
+WARNING:root:Multiply: 10 * 5 = 50
+DEBUG:root:Divide: 10 / 5 = 2.0
+2024-04-15 15:04:25,491:WARNING:Multiply: 10 * 5 = 50
+2024-04-15 15:04:25,491:DEBUG:Divide: 10 / 5 = 2.0
+2024-04-15 15:04:29,450:WARNING:Multiply: 10 * 5 = 50
+2024-04-15 15:04:29,451:DEBUG:Divide: 10 / 5 = 2.0
