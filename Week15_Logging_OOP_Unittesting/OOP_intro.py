@@ -13,6 +13,7 @@ class Student:
         return f"{self.first_name} {self.last_name}"
 
 
+
 student1 = Student("Jane", "Doe", 85)
 student2 = Student("John", "Wright", 78)
 print(student1.email)
