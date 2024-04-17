@@ -32,3 +32,10 @@ print(multiply_two)
 # i) Find the odd numbers from a given list
 # ii) Square each odd number
 # iii) Sum of squared odd numbers
+from functools import reduce
+odd = list(filter(lambda n: n % 2 != 0, nums))
+print(odd)
+squared_odd = list(map(lambda n: pow(n, 2), odd))
+print(squared_odd)
+sumSqrOdd = reduce(lambda a, b: a + b, squared_odd)
+print(sumSqrOdd)
