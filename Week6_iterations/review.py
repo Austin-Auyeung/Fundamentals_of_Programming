@@ -1,17 +1,17 @@
-# ## Break
-# for i in range(11):
-#     if i > 5:
-#         break # just breaks the execution of the loop
-#     else:
-#         print(i) # 0 to 5
-#
-#
-# ## Continue
-# for i in range(11):
-#     if i % 2 == 0:
-#         continue # skips the current iteration and moves onto the next iteration
-#     else:
-#         print(i)
+## Break
+for i in range(11):
+    if i > 5:
+        break # just breaks the execution of the loop
+    else:
+        print(i) # 0 to 5
+
+
+## Continue
+for i in range(11):
+    if i % 2 == 0:
+        continue # skips the current iteration and moves onto the next iteration
+    else:
+        print(i)
 
 
 '''

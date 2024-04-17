@@ -3,6 +3,7 @@ import random
 
 # rand_num = random.random() # always returns a value between 0 and 1
 # # print(round(rand_num, 2))
+# random = random.randint(1, 100)
 choice = "yes"
 while choice.lower() == "yes":
     userMove = input("Pick your move - rock/paper/scissors: ")
